@@ -23,7 +23,7 @@ def app():
     st.markdown("## Data Upload")
 
     st.markdown("### Upload a csv file for analysis.") 
-    c1,c2 = st.beta_columns((3,1))
+    c1,c2 = st.columns((3,1))
     c1.text("*NOTE*") #- Download the template and upload the data strictly according to the template. \nFor multivariate data, the first feature should be the target variable.\nThere's no limit on the independent features.\nMaximum of 1000 rows should be provided.")
     c1.text('1. Download the template and upload the data strictly according')
     c1.text('to the template.')
