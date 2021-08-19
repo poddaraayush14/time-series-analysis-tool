@@ -22,7 +22,7 @@ def app():
             ts = pd.read_csv('data/udata.csv')
             
             st.write('Select plots to display:')
-            col1,col2,col3 = st.beta_columns(3)
+            col1,col2,col3 = st.columns(3)
             desc = col1.checkbox('Dataset Description')
             tsr = col2.checkbox('Trend/ Seasonality and Residual')
             acp = col3.checkbox('ACF/ PACF Plot')
@@ -74,7 +74,7 @@ def app():
             df = pd.read_csv('data/mdata.csv')
             
             st.write('Select plots to display:')
-            col1,col2,col3 = st.beta_columns(3)
+            col1,col2,col3 = st.columns(3)
             desc = col1.checkbox('Dataset Description')
             tsr = col2.checkbox('Trend/ Seasonality and Residual')
             acp = col3.checkbox('ACF/ PACF Plot')
