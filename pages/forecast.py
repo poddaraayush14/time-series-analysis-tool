@@ -52,7 +52,7 @@ def app():
                 x_train1, x_test1, y_train1, y_test1 = X[: int(0.8*len(X))], X[int(0.8*len(X)) :], y[: int(0.8*len(X))], y[int(0.8*len(X)) :]
                 return x_train1, x_test1, y_train1, y_test1, x_forecastu
             st.write('Select models to display their corresponding forecast:')
-            col1,col2 = st.beta_columns(2)  
+            col1,col2 = st.columns(2)  
             sar = col1.checkbox('ARIMA/SARIMA')
             hwe = col1.checkbox('Holt Winters Exponential Smoothing')
             svreg = col2.checkbox('Simple Vector Regression (SVR)')
@@ -171,7 +171,7 @@ def app():
                 return x_train, x_test, y_train, y_test, x_forecast
             
             st.write('Select models to display their corresponding forecast:')
-            col1,col2 = st.beta_columns(2)
+            col1,col2 = st.columns(2)
             var = col1.checkbox('Vector Auto Regression (VAR)')
             varm = col1.checkbox('Vector Auto Regression Moving Average (VARMA)')
             svreg = col2.checkbox('Simple Vector Regression (SVR)')
