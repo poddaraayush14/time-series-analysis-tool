@@ -197,7 +197,7 @@ def app():
                 plt.title("Fit of the Forecast - VAR")
                 plt.xlabel("Timestamp")
                 plt.ylabel("y")
-                plt.plot(sc1.inverse_transform(test['y']), label='Actual')
+                plt.plot(sc1.inverse_transform(test['y'].values), label='Actual')
                 plt.plot(sc1.inverse_transform(predictions), label='Forecasted',color='red')
                 plt.legend()
                 st.plotly_chart(pfig)
